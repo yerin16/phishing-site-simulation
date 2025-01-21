@@ -12,14 +12,14 @@
         <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
     </a>
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <script>Kakao.init('YOUR APP KEY!!!!!!!!!');</script>
+    <script>Kakao.init('!!!!!!!YOUR APP KEY!!!!!!!');</script>
     <script type="text/javascript">
         function sendLink() {
             Kakao.Link.sendDefault({
                 objectType: 'feed',
                 content: {
-                    title: '네이버 고객센터',
-                    description: '고객님의 네이버 계정이 해외에서 로그인 되었습니다. 비밀번호를 바꾸는 것을 권장드립니다.',
+                    title: 'Your account will be DEACTIVATED after 24 hours.',
+                    description: 'Please sign in to activate your acount. You have not used your account for ...',
                     imageUrl:
                         'https://korcan50years.files.wordpress.com/2016/06/naver.jpg',
                     link: {
@@ -29,7 +29,7 @@
                 },
                 buttons: [
                     {
-                        title: '로그인 하기',
+                        title: 'Sign In',
                         link: {
                             mobileWebUrl: 'https://developers.kakao.com',
                             webUrl: 'https://developers.kakao.com',
